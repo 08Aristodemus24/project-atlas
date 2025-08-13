@@ -22,3 +22,44 @@ a. fermented foods preparation with ingredients in caption with end product at t
 b. functional exercises and key mechanics to focus on e.g. zercher squats 200 x 4 x 6, keep spine neutral, engage core, keep tension on quads when exploding up, don't try to lift hips first to compensate for fatigued quads (this puts tension on the lower back rather than the quads), don't let knees cave in when exploding up, quads must be parallel to the ground but better if hamstring  touches calves as going up will cue your quads and calves to work together to explode up rather than compensating using hips  
 
 # about page
+* Beyond the gym and the digital noise, lies a journey back to our roots. Our ancestors were not just strong; they were resilient, fueled by an intuitive understanding of movement and an artisanal connection to their food. In an age of artificiality, we believe true strength isn't just about lifting weights—it's about honoring that tradition.
+
+Here, we combine the science of functional strength training with the timeless wisdom of artisanal nourishment. We’ll go beyond generic workout plans and show you how to fuel your body with purpose, from mastering fundamental movements to crafting nutrient-dense foods using methods that have stood the test of time.
+
+This isn't just about a workout or a diet; it's a mentorship for mind, body, and spirit. It's about empowering you to build a stronger, more resilient self, while reconnecting with the authentic power that lies within all of us.
+
+* Based on your vision, combining the ruggedness of functional strength with the deliberate, traditional nature of artisanal food, here are some eye-catching titles for your personal training business.
+
+I've categorized them to give you a range of styles.
+
+**Direct & Action-Oriented**
+These titles are straightforward, powerful, and immediately tell clients what you're about.
+- Forge & Fuel (Simple, strong, connects both concepts)
+- The Ancestral Athlete (Highlights the "back to tradition" theme)
+- Legacy Strength & Sustenance (Evokes a sense of tradition and lasting power)
+- Primal Craft Fitness (Connects primitive strength with artisanal craft)
+
+**Traditional & Rooted**
+These titles lean into the idea of old-world strength and timeless tradition.
+- Iron & Harvest (Combines hard strength with food)
+- The Guild of Strength (Presents your service as a master-craftsman's guild)
+- Stone & Hearth Fitness (Evokes images of hard labor and home-cooked meals)
+- Artisan Barbell (A unique blend of the two worlds)
+**Modern & Resilient**
+These titles use contemporary language to describe a timeless philosophy.
+- Resilience Protocol (Sounds like a structured, no-nonsense program)
+- The Modern Craftsman (Positions clients as builders of their own bodies and health)
+- Hard Labor & Hearth (A direct, memorable nod to the core philosophy)
+- The Functional Forge (Highlights the "functional" aspect with a strong metaphor)
+**Focused on Food as Fuel**
+These titles give more emphasis to the unique artisanal food preparation component.
+- Feast & Forge (Simple, memorable, and active)
+- The Rations & Reps Project (Sounds like a comprehensive, focused program)
+- Fermented & Functional (Directly uses a key component of your food philosophy)
+- From Field to Fight (Connects the origin of food to the application of strength)
+**Metaphorical & Evocative**
+These titles are a bit more abstract, designed to pique curiosity and create a powerful feeling.
+- The Vigor Method (Vigor means physical strength and energy)
+- Back to Bone (Suggests returning to a fundamental, unbreakable level of strength)
+- The Enduring Man (Speaks to a timeless, resilient ideal)
+- Grit & Grain (Connects physical toughness with the raw components of food)
