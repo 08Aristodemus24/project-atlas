@@ -1,12 +1,12 @@
 <script>
     import Hero from "$lib/Hero.svelte";
 </script>
-<Hero section_name="about">
-    <div class="about-headers">
+<Hero section_name="about-me">
+    <div class="about-me-headers">
         <p class="fullname-header">Lara Cueva</p>
         <p class="email-header">paperpensart@gmail.com</p>
     </div>
-    <div class="about-socials">
+    <div class="about-me-socials">
         <a href="http://linkedin.com/in/paperpensart">
             <svg class="linkedin-icon" version="1.0" xmlns="http://www.w3.org/2000/svg" width="1344" height="1344" viewBox="0 0 1008 1008"><path d="M90.3 43.5c-41.4 7.5-75.9 38.9-87.8 80-2.3 8.2-2.5 10.1-2.5 31s.2 22.8 2.5 31.1c11.6 40.3 44.8 71 86 79.5 11.6 2.4 39.6 3.4 52.5 1.8 48.9-5.8 87.5-41.7 98.2-91.4 1.6-7.8 1.6-34.2 0-42-10-46.5-43.3-80.1-88.7-89.6-7.3-1.5-13.1-1.9-31-1.8-13.4.1-24.8.6-29.2 1.4zM725.8 342c-55.2 7-105.6 33.9-140 75-4.4 5.2-11.1 14.2-14.9 19.9l-6.9 10.4-.2-45.4-.3-45.4-108.2-.3-108.1-.2.4 139.7c.3 76.9.1 223.6-.3 326.1l-.8 186.2h217.6l-.1-193.3c-.1-168.1.1-194.3 1.4-201.6 6.8-37.4 25.7-65.5 56.6-84.1 32.4-19.5 76.3-22.1 108.5-6.5 29.6 14.3 48.3 42.3 56.5 84.5 4.5 22.8 4.3 17.2 4.7 214.2l.4 186.8h216l-.4-207.8c-.3-226 0-212.9-5.8-246.2-21-120.6-92.8-195.1-202.9-210.5-13.1-1.9-62.4-2.9-73.2-1.5zM10 682v326h217l-.2-325.8-.3-325.7-108.2-.3L10 356v326z"/></svg>
         </a>
@@ -338,7 +338,7 @@
             </svg>
         </a>
     </div>
-    <p class="about-bio">
+    <p class="about-me-bio">
         Lara Marie Cueva is currently a second year BFA 
         visual communication major at the University of 
         the Philippines Diliman. She is an illustrator 

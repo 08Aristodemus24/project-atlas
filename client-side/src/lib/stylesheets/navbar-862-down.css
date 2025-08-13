@@ -89,7 +89,7 @@
     margin-left: auto;
 
     /* design */
-    /* outline: 2px solid red; */
+    /* outline: 1px solid red; */
     /* background-color: transparent; */
   }
 
@@ -99,11 +99,12 @@
 
     /* design */
     color: white; 
+    text-align: left;
     font-size: clamp(24px, 2vw, 32px);
     font-weight: 300;
     font-family: 'League Spartan', sans-serif;
     text-decoration: none;
-    outline: 1px solid yellow;
+    /* outline: 1px solid yellow; */
 
     width: max-content;
 

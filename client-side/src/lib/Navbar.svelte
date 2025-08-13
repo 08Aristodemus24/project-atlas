@@ -82,7 +82,7 @@
             <a 
                 class="navbar-brand" 
                 href="/"
-            >Lara Cueva</a>
+            ></a>
             <!-- <div 
                 on:click|preventDefault={toggle_menu} 
                 class="button-container" 
@@ -105,9 +105,9 @@
         
         <div class="nav-menu-container">
             <div class="nav-menu">
-                <a href="/illustration" class="nav-item illustration-section">illustration</a>
-                <a href="/concepts" class="nav-item concepts-section">concepts</a>
-                <a href="/about" class="nav-item about-section">about</a>
+                <a href="/about-me" class="nav-item about-me-section">about me</a>
+                <a href="/primer" class="nav-item primer-section">primer</a>
+                <a href="/services" class="nav-item services-section">services</a>
                 <!-- <a class="nav-item about-section" aria-current="page" on:click={close_and_go}>ABOUT</a>
                 <a class="nav-item work-group-section" on:click={close_and_go}>WORK</a>
                 <a class="nav-item contact-section" on:click={close_and_go}>CONTACT</a> -->

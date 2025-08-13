@@ -63,3 +63,5 @@ These titles are a bit more abstract, designed to pique curiosity and create a p
 - Back to Bone (Suggests returning to a fundamental, unbreakable level of strength)
 - The Enduring Man (Speaks to a timeless, resilient ideal)
 - Grit & Grain (Connects physical toughness with the raw components of food)
+
+ancestral, artisanal, forge, fuel, iron, project, demeter, atlas

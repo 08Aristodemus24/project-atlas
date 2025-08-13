@@ -74,8 +74,13 @@ body{
     height: min-content;
     width: max-content;
 
+    /* display
+    display: flex;
+    flex-direction: column;
+    align-items: center; */
+
     /* design */
-    /* outline: 2px solid red; */
+    /* outline: 1px solid red; */
 }
 
 .nav-brand-container .navbar-brand{
@@ -85,9 +90,34 @@ body{
     font-weight: 300;
     font-family: 'League Spartan', sans-serif;
     text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-transform: capitalize;
     /* outline: 1px solid red; */
 
+    /* size */
     width: max-content;
+}
+
+.nav-brand-container .navbar-brand::before{
+    /* display */
+    display: block;
+
+    /* design */
+    content: 'Atlas and Demeter';
+}
+
+.nav-brand-container .navbar-brand::after{
+    /* display */
+    display: block;
+    
+    /* design */
+    content: 'artisanal meal prep & functional strength';
+    color: white;
+    font-size: 13px;
+    /* letter-spacing: 1px; */
+    /* outline: 1px solid lightgreen; */
 }
 
 .nav-brand-container .button-container{

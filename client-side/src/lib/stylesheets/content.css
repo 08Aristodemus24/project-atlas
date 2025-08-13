@@ -6,6 +6,7 @@ section[id*="section"]{
     min-height: calc(100vh - clamp(3.5rem, 9vw, 9rem));
     margin-top: clamp(3.5rem, 9vw, 9rem);
     /* font-family: 'Century Gothic', sans-serif; */
+    border: 1px solid red;
 }
 
 #landing-section{
@@ -29,7 +30,7 @@ section[id*="section"]{
     /* alignment */ 
     /* margin-left: auto;
     margin-right: auto;
-    margin-top: auto;
+    margin-top: clamp(3.5rem, 9vw, 9rem);
     margin-bottom: auto; */
 
     /* design */
@@ -61,7 +62,7 @@ section[id*="section"]{
     padding-block: 2rem;
 }
 
-#featured-section .grid-container{
+/* #featured-section .grid-container{
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(3, 4in);
@@ -69,16 +70,16 @@ section[id*="section"]{
     row-gap: 1rem;
     column-gap: 1rem;
 
-    /* outline: 1px solid red; */
-    /* margin-block: 1rem; */
-}
+    outline: 1px solid red;
+    margin-block: 1rem;
+} */
 
-div[class^="featured-grid"]{
+/* div[class^="featured-grid"]{
     position: relative;
     border-radius: 7px;
     border: 1px solid red;
     overflow: hidden;
-}
+} */
 
 /* div[class^="featured-grid"]::after{
     width: 100%;
@@ -91,17 +92,17 @@ div[class^="featured-grid"]{
     content: attr(data-grid-index);
 } */
 
-div[class^="featured-grid"] img{
+/* div[class^="featured-grid"] img{
     position: absolute;
     inset: 0;
-    /* margin: auto; */
+
     object-fit: cover;
 
     height: 100%;
     width: 100%;
-}
+} */
 
-.featured-grid-1{
+/* .featured-grid-1{
     grid-column: 1 / 2;
     grid-row: 1 / 5;
 }
@@ -169,28 +170,28 @@ div[class^="featured-grid"] img{
 .featured-grid-14{
     grid-column: 2 / 3;
     grid-row: 15 / 16;
-}
+} */
 
 
-/* ABOUT SECTION */
-#about-section{
+/* ABOUT ME SECTION */
+#about-me-section{
     /* border: 1px solid red; */
     background-color: black;
 
     display: flex;
 }
 
-#about-section .about-content{
+#about-me-section .about-me-content{
     /* outline: 1px solid red; */
     width: 50%;
 }
 
-#about-section .about-content .about-headers{
+#about-me-section .about-me-content .about-me-headers{
     border: 1px solid green;
     padding-block: 2rem;
 }
 
-.about-content .about-headers{
+.about-me-content .about-me-headers{
     text-align: left;
     color: white;
     font-size: clamp(12px, 1vw, 1rem);
@@ -199,13 +200,13 @@ div[class^="featured-grid"] img{
     text-decoration: none;
 }
 
-.about-content .about-socials{
+.about-me-content .about-me-socials{
     border: 1px solid saddlebrown;
     display: flex;
     column-gap: 1rem;
 }
 
-.about-socials a{
+.about-me-socials a{
     display: block;
 
     color: white;
@@ -214,7 +215,7 @@ div[class^="featured-grid"] img{
     transition: color 0.25s ease-in-out;
 }
 
-.about-socials svg{
+.about-me-socials svg{
     /* design */
     fill: white;
     cursor: pointer;
@@ -230,11 +231,11 @@ div[class^="featured-grid"] img{
     transition-timing-function: linear;
 }
 
-.about-socials a:hover svg{
+.about-me-socials a:hover svg{
     fill: grey;
 }
 
-#about-section .about-content .about-bio{
+#about-me-section .about-me-content .about-me-bio{
     border: 1px solid red;
     text-align: justify;
     color: white;
