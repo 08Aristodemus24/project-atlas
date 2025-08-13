@@ -6,7 +6,7 @@ section[id*="section"]{
     min-height: calc(100vh - clamp(3.5rem, 9vw, 9rem));
     margin-top: clamp(3.5rem, 9vw, 9rem);
     /* font-family: 'Century Gothic', sans-serif; */
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 #landing-section{
@@ -35,13 +35,49 @@ section[id*="section"]{
 
     /* design */
     content: '';
-    background-image: url('https://raw.githubusercontent.com/08Aristodemus24/project-atlas/master/client-side/src/assets/mediafiles/macedonianwarrior (1).jpg');
+    background-image: url('https://raw.githubusercontent.com/08Aristodemus24/project-atlas/master/client-side/src/assets/mediafiles/macedonianwarrior (3).jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* filter: grayscale(100%) brightness(50%); */
+    filter: 
+        /* grayscale(100%)  */
+        brightness(25%);
 }
+
+.landing-info{
+    /* display */
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    
+    /* design */
+    color: white;
+    font-size: 13px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    /* outline: 1px solid rebeccapurple; */
+
+    width: 50%;
+}
+
+.landing-info p::first-line{
+    font-weight: bold;
+}
+
+.landing-info p::first-letter{
+    /* design */
+    -webkit-initial-letter: 2 2;
+    initial-letter: 2 2;
+    /* border: 1px solid red; */
+
+    /* top right bottom left margin */
+    margin: 0 0.25rem 0 0;
+}
+
 
 #featured-section{
     min-height: 100vh;

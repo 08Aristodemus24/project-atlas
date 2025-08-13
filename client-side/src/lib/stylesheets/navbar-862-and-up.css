@@ -94,26 +94,30 @@ body{
     cursor: pointer;
     letter-spacing: 1px;
     text-transform: capitalize;
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
+
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
 
     /* size */
     width: max-content;
 }
 
-.nav-brand-container .navbar-brand::before{
+.navbar-brand title{
     /* display */
     display: block;
 
     /* design */
-    content: 'Atlas and Demeter';
+    /* outline: 1px solid red; */
+    margin-bottom: -5px;
 }
 
-.nav-brand-container .navbar-brand::after{
+.navbar-brand small{
     /* display */
     display: block;
     
     /* design */
-    content: 'artisanal meal prep & functional strength';
     color: white;
     font-size: 13px;
     /* letter-spacing: 1px; */

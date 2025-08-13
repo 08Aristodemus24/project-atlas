@@ -1,4 +1,5 @@
 # ideas
+
 * I've realized that the typical 9-5 isn't just going to cut it, and companies won't give and don't give a single fuck about whether they lay you off or not for the benefit of their organization. And we've talked about how I predict that typical people will now start having a revolution in this age of AI and hwo they willleverage something that has always existed in the human experience, that of creativity and the ability to evoke emotions of a human in another. And I think as someone who has been into fitness for a while now about 8 to 9 years and counting, I think the demand for being healthy and aesthetic and funcitonallly strong is growing and will continue to grow and something AI can never replace given that personal trainers still are sought after solely for the interaction clients and consumers get as a part of their service. And I thought that I as a engineer who has heavy experience not only in data but also as a application and web apps engineer could leverage what I know to build a website and app geared for people wanting to to be healthier, aesthetic, and functionally strong. I believe I have the gift for it because people younger than me like have always sought after my advice on how to be fit, and I've always done so willingly even without charge. I enjoy teaching in general and seeing growth in the people I mentor. And so I am now currently in the midst of starting my own personal training business, as my own side hustle, aside from my 9-5. I believe multiple opportunities can stem from this like being able to grow my alrady existing youtube channel and filling with artisanal methods of creating foods that fuel functional strength regimens like fermented foods as a way of empowering people to do it on their own, and also to fill this channel and hopefully an instagram with educational information on how to do functional strength exercises. I do this because I think we've lost the way of this artisanal way of nourishing ourselves that our ancestors would have done anyways had they still existed. This is my vision, and I believe more and more people will come to love this way of tradition that has existed for centuries and maybe even dating back to the dawn of man himself. Di na rin kasi talaga ang isang source ng income, in this day and age, you need youtube, investment, your own personal business or side hustle.
 
 * build about page, credentials proving you're a trainer but also your own testimony as someone having trained for 9 years and counting, contact page
@@ -65,3 +66,15 @@ These titles are a bit more abstract, designed to pique curiosity and create a p
 - Grit & Grain (Connects physical toughness with the raw components of food)
 
 ancestral, artisanal, forge, fuel, iron, project, demeter, atlas
+
+# primer
+* will contain the benefits of functional training, training to defend yourself to be more, to save someone in a burning building, or train to be in the armed forces
+
+will contain contain 
+
+
+# services
+* will contain montage about preparing fermented foods, choosing nutrient dense foods, 
+
+# inspiration
+* https://www.elliottfitness.co.uk/

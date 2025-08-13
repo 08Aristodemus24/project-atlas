@@ -82,7 +82,10 @@
             <a 
                 class="navbar-brand" 
                 href="/"
-            ></a>
+            >
+                <title>Atlas and Demeter</title>  
+                <small>artisanal meal prep & functional strength</small>
+            </a>
             <!-- <div 
                 on:click|preventDefault={toggle_menu} 
                 class="button-container" 
