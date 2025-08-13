@@ -1,0 +1,23 @@
+/client-side/node_modules
+
+# Output
+/client-side/.output
+/client-side/.vercel
+/client-side/.netlify
+/client-side/.wrangler
+/client-side/.svelte-kit
+/client-side/build
+
+# OS
+/client-side/.DS_Store
+/client-side/Thumbs.db
+
+# Env
+/client-side/.env
+/client-side/.env.*
+/client-side/!.env.example
+/client-side/!.env.test
+
+# Vite
+/client-side/vite.config.js.timestamp-*
+/client-side/vite.config.ts.timestamp-*

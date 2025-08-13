@@ -1,0 +1,733 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+/* LANDING SECTION */
+
+section[id*="section"]{
+    min-height: calc(100vh - clamp(3.5rem, 9vw, 9rem));
+    margin-top: clamp(3.5rem, 9vw, 9rem);
+    /* font-family: 'Century Gothic', sans-serif; */
+}
+
+#landing-section{
+    position: relative;
+}
+
+#landing-section::after{
+    /* size */
+    width: 100%;
+    height: 100%;
+
+    /* position */
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    /* to not affect contents color place pseudo element behind content */
+    z-index: -1;
+
+    /* alignment */ 
+    /* margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto; */
+
+    /* design */
+    content: '';
+    background-image: url('https://raw.githubusercontent.com/08Aristodemus24/lalais-portfolio/master/client-side/src/assets/mediafiles/compressed/IMG_4993.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: grayscale(100%) brightness(50%); */
+}
+
+#featured-section{
+    min-height: 100vh;
+    margin-top: 0;
+    /* outline: 1px solid saddlebrown; */
+    background-color: black;
+}
+
+#featured-section h1{
+    /* outline: 1px solid red; */
+    text-align: center;
+    color: white;
+    font-size: clamp(24px, 2vw, 32px);
+    font-weight: 300;
+    font-family: 'League Spartan', sans-serif;
+    text-decoration: none;
+
+    padding-block: 2rem;
+}
+
+#featured-section .grid-container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 4in);
+    grid-template-rows: repeat(16, 5rem);
+    row-gap: 1rem;
+    column-gap: 1rem;
+
+    /* outline: 1px solid red; */
+    /* margin-block: 1rem; */
+}
+
+div[class^="featured-grid"]{
+    position: relative;
+    border-radius: 7px;
+    border: 1px solid red;
+    overflow: hidden;
+}
+
+/* div[class^="featured-grid"]::after{
+    width: 100%;
+    height: 100%;
+    
+    position: absolute;
+    inset: 0;
+    margin: auto;
+
+    content: attr(data-grid-index);
+} */
+
+div[class^="featured-grid"] img{
+    position: absolute;
+    inset: 0;
+    /* margin: auto; */
+    object-fit: cover;
+
+    height: 100%;
+    width: 100%;
+}
+
+.featured-grid-1{
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+}
+
+.featured-grid-2{
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
+.featured-grid-3{
+    grid-column: 3 / 4;
+    grid-row: 1 / 6;
+}
+
+.featured-grid-4{
+    grid-column: 1 / 2;
+    grid-row: 5 / 10;
+}
+
+.featured-grid-5{
+    grid-column: 2 / 3;
+    grid-row: 3 / 5;
+}
+
+.featured-grid-6{
+    grid-column: 3 / 4;
+    grid-row: 6 / 10;
+}
+
+.featured-grid-7{
+    grid-column: 1 / 2;
+    grid-row: 10 / 15;
+}
+
+.featured-grid-8{
+    grid-column: 2 / 3;
+    grid-row: 5 / 9;
+}
+
+.featured-grid-9{
+    grid-column: 3 / 4;
+    grid-row: 10 / 14;
+}
+
+.featured-grid-10{
+    grid-column: 1 / 2;
+    grid-row: 15 / 17;
+}
+
+.featured-grid-11{
+    grid-column: 2 / 3;
+    grid-row: 9 / 13;
+}
+
+.featured-grid-12{
+    grid-column: 3 / 4;
+    grid-row: 14 / 16;
+}
+
+.featured-grid-13{
+    grid-column: 2 / 3;
+    grid-row: 13 / 15;
+}
+
+.featured-grid-14{
+    grid-column: 2 / 3;
+    grid-row: 15 / 16;
+}
+
+
+/* ABOUT SECTION */
+#about-section{
+    /* border: 1px solid red; */
+    background-color: black;
+
+    display: flex;
+}
+
+#about-section .about-content{
+    /* outline: 1px solid red; */
+    width: 50%;
+}
+
+#about-section .about-content .about-headers{
+    border: 1px solid green;
+    padding-block: 2rem;
+}
+
+.about-content .about-headers{
+    text-align: left;
+    color: white;
+    font-size: clamp(12px, 1vw, 1rem);
+    font-weight: 300;
+    font-family: 'League Spartan', sans-serif;
+    text-decoration: none;
+}
+
+.about-content .about-socials{
+    border: 1px solid saddlebrown;
+    display: flex;
+    column-gap: 1rem;
+}
+
+.about-socials a{
+    display: block;
+
+    color: white;
+    text-decoration: underline;
+
+    transition: color 0.25s ease-in-out;
+}
+
+.about-socials svg{
+    /* design */
+    fill: white;
+    cursor: pointer;
+    /* outline: 1px solid lightgreen; */
+    
+    /* size */
+    width: clamp(15px, 2.34375vw, 22.5px);
+    height: clamp(15px, 2.34375vw, 22.5px);
+
+    /* transition */
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: linear;
+}
+
+.about-socials a:hover svg{
+    fill: grey;
+}
+
+#about-section .about-content .about-bio{
+    border: 1px solid red;
+    text-align: justify;
+    color: white;
+    font-size: clamp(14px, 2.1875vw, 22.4px);
+    font-weight: 300;
+    font-family: 'League Spartan', sans-serif;
+    text-decoration: none;
+
+    padding-block: 2rem;
+}
+
+/* FORM SECTION */
+#data-form-section{
+    /* size for each section*/
+    /* take into account navbar in data-form section */
+    /* min-height: calc(100vh - clamp(3.5rem, 6.5vw, 6.5rem)); */
+    min-height: 100vh;
+  
+    /* position */
+    position: relative;
+
+    /* display */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    /* design */
+    border: 2px solid lightseagreen;
+}
+  
+#data-form-section::after{
+    /* size */
+    width: 100%;
+    height: 100%;
+
+    /* position */
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    /* to not affect contents color place pseudo element behind content */
+    z-index: -1;
+
+    /* design */
+    content: '';
+    background-image: url('https://raw.githubusercontent.com/08Aristodemus24/project-seraphim/master/client-side/src/assets/mediafiles/journey-painting-wallpaper.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(75%);
+}
+
+.data-form-content{
+    /* alignment */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* design */
+    outline: 3px solid purple;
+}
+
+.form-container{
+    /* design */
+    outline: 1px solid yellow;
+
+    /* size */
+    /* width: 100%; */
+
+    /* spacing */
+    margin-block: 1rem;
+}
+
+.form-container .form.two-col{
+    /* display */
+    /* display: grid; */
+
+    /* size of columns and rows */
+    /* grid-template-columns: repeat(auto-fit, 1fr); */
+
+    /* alignment */
+    /* align-items: center; */
+
+    /* spacing */
+    /* row-gap: 2rem;
+    column-gap: 1.5rem; */
+
+    /* design */
+    /* outline: 2px solid lightgreen; */
+}
+
+.form-container .form.one-col{
+    /* display */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+
+    /* outline */
+    outline: 2px solid lightskyblue;
+
+}
+
+.form div[class*="container"]{
+    /*  */
+    outline: 1px solid salmon;
+}
+
+.fname-label, 
+.lname-label, 
+.email-label, 
+.country-code-label, 
+.mobile-num-label, 
+.message-label,
+.model-name-label,
+.prompt-label,
+.temp-label,
+.seq-len-label{
+    /* design */
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+    font-size: clamp(12px, 1vw, 1rem);
+    color: white;
+    /* outline: 1px solid brown; */
+
+    /* spacing */
+    margin-top: 1em;
+    margin-bottom: 1em;
+  
+    /* display */
+    display: block;
+}
+
+.fname-field,
+.lname-field,
+.email-field,
+.country-code-field,
+.mobile-num-field,
+.message-field,
+.model-name-field,
+.prompt-field,
+.seq-len-field{
+    /* design */
+    background-color: transparent;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: clamp(12px, 1vw, 1rem);
+    color: white;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid white;
+    /* outline: 1px solid brown; */
+
+    width: 12rem;
+    /* width: 30rem; */
+  
+    /* display */
+    display: block;
+}
+
+.country-code-field option{
+    /* design */
+    background-color: rgba(255, 0, 0, 0);
+    color: black;
+}
+
+.model-name-field option{
+    /* design */
+    background-color: rgba(255, 0, 0, 0);
+    color: black;
+}
+
+.temp-field{
+    /* size */
+    width: 12rem;
+    /* width: 30rem; */
+
+    /* design */
+    background-color: rgb(255, 255, 255);
+    -webkit-appearance: none;
+}
+
+.temp-field::-webkit-slider-runnable-track{
+    /* size */
+    height: 0.5px;
+
+    /* design */
+    cursor: pointer;
+    border-radius: 0px;
+    border: 0px solid black;
+    box-shadow: none;
+    appearance: none;
+}
+
+.temp-field::-ms-track{
+    /* size */
+    height: 1px;
+
+    /* design */
+    cursor: pointer;
+    border-radius: 0px;
+    border: 0px solid black;
+    box-shadow: none;
+    appearance: none;
+}
+
+.temp-field::-webkit-slider-thumb{
+    /* size */
+    height: 20px;
+    width: 3px;
+
+    /* design */
+    box-shadow: none;
+    border: 0px solid black;
+    background-color: #ffffff;
+    cursor: pointer;
+    margin-top: -10px;
+    -webkit-appearance: none;
+}
+
+.temp-field::-ms-thumb{
+    /* size */
+    height: 20px;
+    width: 3px;
+
+    /* design */
+    box-shadow: none;
+    border: 0px solid black;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin-top: -10px;
+    -webkit-appearance: none;
+}
+
+.image-upload-container{
+    /* design */
+    /* outline: 1px solid red; */
+
+    /* display */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+
+    /* spacing */
+    /* put padding of 5px since outlien offset 
+    of 5px for image is specified */
+    padding: 5px;
+}
+
+.uploaded-image{
+    /* design */
+    outline: 1px dashed white;
+    outline-offset: 5px;
+    border: 1px dashed white;
+
+    /* size */
+    height: 200px;
+    width: 200px;
+
+    /* display */
+    display: block;
+}
+
+.image-upload-field-wrapper{
+    /* design */
+    /* outline: 1px solid white; */
+
+    /* display */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.image-upload-label{
+    /* design */
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+    font-size: clamp(12px, 1vw, 1rem);
+    color: white;
+    /* outline: 1px solid yellow; */
+
+    /* spacing */
+    margin-block: 1em;
+  
+    /* display */
+    display: block;
+}
+
+.image-upload-field{
+    /* design */
+    background-color: transparent;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: clamp(12px, 1vw, 1rem);
+    color: white;
+    text-align: center;
+    /* outline: 1px solid greenyellow; */
+  
+    /* display */
+    display: flex;
+
+    /* size */
+    padding: 0.5em;
+}
+
+.image-upload-field::-webkit-file-upload-button{
+    /* design */
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: clamp(12px, 1vw, 1rem);
+    -webkit-user-select: none;
+    
+    /* size */
+    border: 1px solid white;
+    padding: .5em 1.5em;
+    margin-right: 2.5rem;
+    
+    /* display */
+    display: inline-block;
+
+    /* transition */
+    transition-property: background-color, color;
+    transition-duration: 250ms, 250ms;
+    transition-timing-function: ease-in-out, ease-in-out;
+}
+
+.image-upload-field::-webkit-file-upload-button:hover{
+    /* design */
+    background-color: white;
+    color: black;
+}
+
+.submit-btn{
+    /* design */
+    background-color: transparent;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: clamp(12px, 1vw, 1rem);
+    color: white;
+    border: none;
+    outline: 1px solid white;
+    
+    /* size */
+    padding: .5em 5em;
+
+    /* alignment */
+    justify-self: center;
+
+    /* animation */
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+}
+
+.submit-btn:hover{
+    /* design */
+    cursor: pointer;
+    background-color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    color: black;
+    outline: 1px solid white;
+}
+
+.alert-container{
+    /* position */
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    z-index: 20;
+
+    /* design */
+    opacity: 0%;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.377);
+
+    /* transition */
+    transition: 
+        opacity 0.25s ease-in-out,
+        visibility 0.25s ease-in-out;
+}
+
+.alert-container.show{
+    opacity: 100%;
+    visibility: visible;
+}
+
+.alert-wrapper{
+    /* position */
+    position: absolute;
+    top: 0;
+    inset-inline: 0;
+    margin-inline: auto;
+
+    /* display */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* size */
+    height: 12.5%;
+    width: 25%;
+
+    /* design */
+    color: black;
+    text-align: center;
+    font-size: clamp(10px, 1vw, 1rem);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+    background-color: white;
+    /* outline: 1px solid; */
+}
+
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder{ 
+    color: rgba(255, 255, 255, 0.267);
+    opacity: 1; /* Firefox */
+}
+
+/* Internet Explorer 10-11 */
+:-ms-input-placeholder{ 
+    color: rgba(255, 255, 255, 0.267);
+}
+
+/* Microsoft Edge */
+::-ms-input-placeholder{ 
+    color: rgba(255, 255, 255, 0.267);
+}
+
+@media (width < 640px){
+
+}
+
+
+
+/* FOOTER */
+.footer-container{
+    /* size */
+    width: 100%;
+
+    /* design */
+    background-color: black;
+
+    padding-block: 5rem;
+    
+    /* outline: 1px solid gainsboro; */
+}
+
+.footer-content{
+    /* display */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* spacing */
+}
+
+.footer-socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.footer-socials a{
+    display: block;
+
+    color: white;
+    text-decoration: underline;
+
+    transition: color 0.25s ease-in-out;
+}
+
+.footer-socials svg{
+    /* design */
+    fill: white;
+    cursor: pointer;
+    /* outline: 1px solid lightgreen; */
+
+    /* size */
+    width: clamp(15px, 2.34375vw, 22.5px);
+    height: clamp(15px, 2.34375vw, 22.5px);
+
+    /* transition */
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: linear;
+}
+
+.footer-socials a:hover svg{
+    fill: grey;
+}

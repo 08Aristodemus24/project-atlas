@@ -1,0 +1,139 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+
+    /* spacing */
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+html{
+    /* design */
+    line-height: 1.5;
+    /* border: 1px solid purple; */
+
+    /* behavior */
+    scroll-behavior: smooth;
+}
+
+body{
+    /* design */
+    /* inherit line height of parent which is html */
+    line-height: inherit;
+    /* border: 1px solid red; */
+}
+
+.navbar-container{
+    /* size */
+    width: 100%;
+
+    /* position */
+    position: fixed;
+    top: 0;
+    z-index: 10;
+
+    /* design */
+    /* mix-blend-mode: difference; */
+    background-color: black;
+    /* outline: 3px solid green; */
+ 
+    /* transition */
+    transition: top 0.25s cubic-bezier(0.5, 0, 0, 1);
+    
+}
+
+.navbar{
+    /* size */
+    height: clamp(3.5rem, 9vw, 9rem);
+    width: 100%;
+
+    /* display */
+    display: flex;
+    flex-direction: column;
+
+    /*alignment */
+    justify-content: center;
+    align-items: center;
+    row-gap: 0.25rem;
+
+    /* position */
+    position: relative;
+
+    /* design */
+    /* outline: 2px solid red; */
+}
+
+.nav-brand-container{
+    /* size */
+    height: min-content;
+    width: max-content;
+
+    /* design */
+    /* outline: 2px solid red; */
+}
+
+.nav-brand-container .navbar-brand{
+    /* design */
+    color: white;
+    font-size: clamp(24px, 2vw, 32px);
+    font-weight: 300;
+    font-family: 'League Spartan', sans-serif;
+    text-decoration: none;
+    /* outline: 1px solid red; */
+
+    width: max-content;
+}
+
+.nav-brand-container .button-container{
+    display: none;
+}
+
+.nav-menu-container{
+    /* outline: 1px solid red; */
+}
+
+.nav-menu{
+    display: flex;
+    /* outline: 2px solid blue; */
+}
+
+.nav-item{
+    /* display */
+    display: block;
+
+    /* spacing */
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    /* size */
+    width: max-content;     
+
+    /* design */
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    cursor: pointer;
+    /* outline: 3px solid lightgreen; */
+
+    /* position */
+    position: relative;
+
+    transition: color 0.25s ease-in-out;
+}
+
+.nav-item:hover{
+    color: grey;
+}
