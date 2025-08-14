@@ -36,13 +36,23 @@
 
     /* position */
     position: fixed;
+    top: 0;
     z-index: 10;
 
     /* design */
     /* mix-blend-mode: difference; */
-
+    background-color: rgba(0, 0, 0, 0);
+    /* outline: 1px solid green; */
+ 
     /* transition */
-    transition: top 0.25s cubic-bezier(0.5, 0, 0, 1);
+    transition: 
+        background-color
+        0.25s 
+        ease-in-out;
+  }
+
+  .navbar-container.not-at-top{
+    background-color: rgb(0, 0, 0);
   }
 
   .navbar{
@@ -182,7 +192,7 @@
     /* design */
     text-align: center;
     color: white;
-    font-size: 13px;
+    font-size: clamp(12px, 1vw, 1rem);
     font-family: 'League Spartan', sans-serif;
     font-weight: 300;
     text-transform: capitalize;

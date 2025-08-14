@@ -25,9 +25,15 @@
             Beyond the gym and the digital noise, lies a journey back to our roots.
             Our ancestors were not just strong; they were resilient, fueled by an
             intuitive understanding of movement and an artisanal connection to their food.
+            <br>
             In an age of artificiality, we believe true strength isn't just about lifting
             weights—it's about honoring that tradition.
         </p>
+    </div>
+</Hero>
+<Hero section_name="featured">
+    <h1 class="featured-header">Featured</h1>
+    <div class="grid-container">
         <p>
             Here, we combine the science of functional strength training with the timeless 
             wisdom of artisanal nourishment. We'll go beyond generic workout plans and show
@@ -39,11 +45,5 @@
             spirit. It's about empowering you to build a stronger, more resilient self, 
             while reconnecting with the authentic power that lies within all of us.
         </p>
-    </div>
-</Hero>
-<Hero section_name="featured">
-    <h1 class="featured-header">Featured</h1>
-    <div class="grid-container">
-
     </div>
 </Hero>
