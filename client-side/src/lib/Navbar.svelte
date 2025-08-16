@@ -1,20 +1,17 @@
 <script>
-    import { afterUpdate } from "svelte";
+    let is_opened = $state(false), is_at_top = $state(true);
+    let scroll_y = $state(0);
 
-    let is_opened = false, is_at_top = true;
-    let scroll_y = 0;
-    $:rounded_scroll_y = Math.round(scroll_y);
+    // $:rounded_scroll_y = Math.round(scroll_y);
     // const body = document.body;
     
     // if div is closed then its class is .closed if opened then .opened
     const toggle_menu = (event) => {
-        if(is_opened === false){
-        is_opened = !is_opened;
-        // body.style.overflow = "hidden";
+        if(!is_opened){
+            is_opened = !is_opened;
 
         }else{
-        is_opened = !is_opened;
-        // body.style.overflow = "auto";
+            is_opened = !is_opened;
         }
     };
 
@@ -23,9 +20,8 @@
     // but what if user opens modal and sets the dims to desktop
     // then when a tag is clicked modal will be closed
     const close_and_go = (event) => {
-        if(is_opened === true){
+        if(is_opened){
             is_opened = !is_opened;
-            // body.style.overflow = "auto";
         }
 
         const section_id = event.target.classList[1];
@@ -47,22 +43,40 @@
         so if idle state is now set to false meaning navbar is to 
         be shown then class shown is added to the navbar container 
         */
-        const rounded_scroll_y = Math.round(scroll_y);
-        console.log(rounded_scroll_y);
+        const flrd_scroll_y = Math.floor(scroll_y);
+        console.log(flrd_scroll_y);
 
         // if strictly modal is closed and scrollY is scrolled and not
         // at the top only count down to subsequently hide navbar
-        if(rounded_scroll_y > 1 && is_opened === false){
+        if(flrd_scroll_y > 5 && is_opened === false){
             is_at_top = false
-        }else if(rounded_scroll_y === 1 && is_opened === false){
+        }else if(flrd_scroll_y <= 5 && is_opened === false){
             is_at_top = true
         }
     };
 
-    afterUpdate(() => {
+    $effect(() => {
         console.log(`changed navbar state ${is_opened}`);
         console.log(`is at the top ${is_at_top}`);
-    });
+
+        // when navbar is opened and is opened has changed state
+        // change the body overflow to hidden
+        const body = document.body;
+        if(is_opened){
+            body.style.overflow = "hidden";
+
+        }else{
+            body.style.overflow = "auto";
+        }
+
+        // const navbar_container = document.querySelector(".navbar-container");
+        // const flrd_scroll_y = Math.floor(scroll_y);
+        // if(flrd_scroll_y > 5 && is_opened === false){
+        //     navbar_container.style.top = "-10rem";
+        // }else if(flrd_scroll_y <= 5 && is_opened === false){
+        //     navbar_container.style.top = "0";
+        // }
+    })
 </script>
 
 <svelte:window on:scroll={change_nav} bind:scrollY={scroll_y}/>
@@ -106,12 +120,9 @@
         
         <div class="nav-menu-container">
             <div class="nav-menu">
-                <a href="/about-me" class="nav-item about-me-section">about me</a>
-                <a href="/primer" class="nav-item primer-section">primer</a>
-                <a href="/services" class="nav-item services-section">services</a>
-                <!-- <a class="nav-item about-section" aria-current="page" on:click={close_and_go}>ABOUT</a>
-                <a class="nav-item work-group-section" on:click={close_and_go}>WORK</a>
-                <a class="nav-item contact-section" on:click={close_and_go}>CONTACT</a> -->
+                <a href="/about-me" on:click={close_and_go} class="nav-item about-me-section">about me</a>
+                <a href="/primer" on:click={close_and_go} class="nav-item primer-section">primer</a>
+                <a href="/services" on:click={close_and_go} class="nav-item services-section">services</a>
             </div>
         </div>
     </nav>

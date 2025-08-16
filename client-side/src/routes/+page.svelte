@@ -23,26 +23,34 @@
     <div class="landing-info">
         <p>
             Beyond the gym and the digital noise, lies a journey back to our roots.
+        </p>
+        <p>
             Our ancestors were not just strong; they were resilient, fueled by an
             intuitive understanding of movement and an artisanal connection to their food.
-            <br>
+        </p>
+        <p>
             In an age of artificiality, we believe true strength isn't just about lifting
             weights—it's about honoring that tradition.
         </p>
     </div>
 </Hero>
 <Hero section_name="featured">
-    <h1 class="featured-header">Featured</h1>
-    <div class="grid-container">
+    <div class="featured-info">
         <p>
             Here, we combine the science of functional strength training with the timeless 
-            wisdom of artisanal nourishment. We'll go beyond generic workout plans and show
+            wisdom of artisanal nourishment.
+        </p>
+        <p>
+            We'll go beyond generic workout plans and show
             you how to fuel your body with purpose, from mastering fundamental movements 
             to crafting nutrient-dense foods using methods that have stood the test of time.
         </p>
         <p>
             This isn't just about a workout or a diet; it's a mentorship for mind, body, and
-            spirit. It's about empowering you to build a stronger, more resilient self, 
+            spirit.
+        </p>
+        <p>
+            It's about empowering you to build a stronger, more resilient self, 
             while reconnecting with the authentic power that lies within all of us.
         </p>
     </div>

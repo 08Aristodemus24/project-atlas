@@ -41,12 +41,11 @@ section[id*="section"]{
     background-size: cover;
     filter: 
         /* grayscale(100%)  */
-        brightness(25%);
+        brightness(15%);
 }
 
 .landing-content{
     min-height: 100vh;
-    padding-top: clamp(3.5rem, 9vw, 9rem);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,45 +54,57 @@ section[id*="section"]{
 }
 
 .landing-info{
-    /* display */
+
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
     justify-content: center;
     align-items: center;
     
-    /* design */
     color: white;
     font-size: clamp(14px, 2.1875vw, 22.4px);
     font-family: 'League Spartan', sans-serif;
     font-weight: 300;
     text-decoration: none;
     text-transform: capitalize;
-    /* letter-spacing: 0px; */
-    outline: 1px solid rebeccapurple;
+    /* outline: 1px solid rebeccapurple; */
+
+    position: relative;
 
     width: 50%;
 }
 
 .landing-info p{
-    text-align: justify;
-    /* width: 50%; */
-    outline: 1px solid red;
+    /* position: absolute; */
+
+    text-align: center;
+    /* outline: 1px solid red; */
+
+    width: 100%;
+}
+
+.landing-info p:nth-child(2),
+.landing-info p:nth-child(3){
+    opacity: 0%;
+    visibility: hidden;
+
+    position: absolute;
+    top: 0
 }
 
 .landing-info p::first-letter{
-    -webkit-initial-letter: 2 2;
-    initial-letter: 2 2;
+    /* -webkit-initial-letter: 2 2;
+    initial-letter: 2 1;
+    font-family: "Cormorrant Garamond", serif; */
 
     /* top right bottom left margin */
-    margin: 0 0.25rem 0 0;
+    /* margin: 0 0.25rem 0 0; */
+    /* border: 1px solid green; */
 }
 
 
 #featured-section{
-    min-height: 100vh;
-    margin-top: 0;
-    /* outline: 1px solid saddlebrown; */
+    position: relative;
     background-color: black;
 }
 
@@ -109,7 +120,18 @@ section[id*="section"]{
     padding-block: 2rem;
 }
 
-.grid-container{
+.featured-content{
+    min-height: 100vh;
+    /* padding-top: clamp(3.5rem, 9vw, 9rem); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* border: 1px solid red; */
+    padding-left: 15rem;
+}
+
+.featured-info{
     /* display */
     display: flex;
     flex-direction: column;
@@ -122,10 +144,21 @@ section[id*="section"]{
     font-weight: 300;
     text-decoration: none;
     text-transform: capitalize;
-    /* letter-spacing: 1px; */
+    text-align: justify;
     /* outline: 1px solid rebeccapurple; */
 
-    width: 50%;
+    width: 60%;
+}
+
+.featured-info p:nth-child(1):first-letter,
+.featured-info p:nth-child(3):first-letter{
+    -webkit-initial-letter: 2 2;
+    initial-letter: 2 1;
+    font-family: "Cormorrant Garamond", serif;
+
+    /* top right bottom left margin */
+    margin: 0 0.25rem 0 0;
+    /* border: 1px solid green; */
 }
 
 /* #featured-section .grid-container{
@@ -241,7 +274,9 @@ section[id*="section"]{
 
 /* ABOUT ME SECTION */
 #about-me-section{
-    /* border: 1px solid red; */
+    min-height: 100vh;
+
+    border: 1px solid red;
     background-color: black;
 
     display: flex;
@@ -312,6 +347,53 @@ section[id*="section"]{
 
     padding-block: 2rem;
 }
+
+
+
+#primer-section{
+    min-height: 100vh;
+
+    border: 1px solid red;
+    background-color: black;
+    color: white;
+    font-size: clamp(14px, 2.1875vw, 22.4px);
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: capitalize;
+
+    display: flex;
+}
+
+.primer-content{
+    border: 1px solid green;
+
+    width: 100%;
+}
+
+
+
+#services-section{
+    min-height: 100vh;
+
+    border: 1px solid red;
+    background-color: black;
+    color: white;
+    font-size: clamp(14px, 2.1875vw, 22.4px);
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: capitalize;
+
+    display: flex;
+}
+
+.services-content{
+    border: 1px solid green;
+
+    width: 100%;
+}
+
 
 /* FORM SECTION */
 #data-form-section{
@@ -736,7 +818,10 @@ section[id*="section"]{
 }
 
 @media (width < 640px){
-
+    .featured-content{
+        align-items: center;
+        padding-left: 0;
+    }
 }
 
 
@@ -773,7 +858,7 @@ section[id*="section"]{
 .footer-socials a{
     display: block;
 
-    color: white;
+    color: black;
     text-decoration: underline;
 
     transition: color 0.25s ease-in-out;

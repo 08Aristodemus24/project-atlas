@@ -72,6 +72,8 @@ ancestral, artisanal, forge, fuel, iron, project, demeter, atlas
 
 will contain contain 
 
+* use intersection observer to change navbar color when it hits the featured section
+
 
 # services
 * will contain montage about preparing fermented foods, choosing nutrient dense foods, 

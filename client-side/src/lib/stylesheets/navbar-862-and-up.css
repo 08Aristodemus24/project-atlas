@@ -52,6 +52,7 @@ body{
 
 .navbar-container.not-at-top{
     background-color: rgb(0, 0, 0);
+    /* mix-blend-mode: difference; */
 }
 
 .navbar{
